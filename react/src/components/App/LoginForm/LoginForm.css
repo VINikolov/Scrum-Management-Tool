@@ -2,6 +2,9 @@
     display: block;
     width: 45%;
     float: left;
+    background-color: #4A96AD;
+    border-radius: 20px;
+    color: white;
 }
 
 .heading {

@@ -8,9 +8,7 @@ class App extends Component {
         return (
             <div className="content">
                 <div className="main-heading">
-                    <h1>
-                        Scrum management tool
-                    </h1>
+                    Scrum management tool
                 </div>
                 <RegisterForm />
                 <LoginForm />

@@ -2,7 +2,9 @@
     display: block;
     width: 45%;
     float: right;
-    background-color: rgb(222, 230, 236);
+    background-color: #7D1935;
+    border-radius: 20px;
+    color: white;
 }
 
 .heading {
