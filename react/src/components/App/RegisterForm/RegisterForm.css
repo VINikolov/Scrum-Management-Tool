@@ -1,0 +1,10 @@
+.reg-form {
+    display: block;
+    width: 45%;
+    float: right;
+    background-color: rgb(222, 230, 236);
+}
+
+.heading {
+    text-align: center;
+}
