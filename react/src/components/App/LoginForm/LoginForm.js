@@ -13,7 +13,7 @@ class LoginForm extends Component {
 
                 <form method="POST">
                     <InputField fieldType="text" fieldPlaceholder="username" />
-                    <InputField fieldType="password" fieldPlaceholder="password"/>
+                    <InputField fieldType="password" fieldPlaceholder="password" />
                     <FormButton buttonText="Login" />
                 </form>
             </div>
