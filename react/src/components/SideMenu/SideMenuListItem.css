@@ -1,6 +1,6 @@
 .side-menu-list-item {
       display: block;
-      background: #557a95;
+      background: #C63D0F;
       color: #fff;
       text-decoration: none;
       -webkit-transition: 0.2s linear;
@@ -12,7 +12,7 @@
 
 .side-menu-list-item a {
     display: block;
-    background: #557a95;
+    background: #C63D0F;
     padding: 30px 15px;
     color: #fff;
     text-decoration: none;
