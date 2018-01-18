@@ -6,6 +6,7 @@ class InputField extends Component {
         return (
             <input className="input-field" type={this.props.fieldType} 
                     placeholder={this.props.fieldPlaceholder}
+                    name={this.props.name}
                     required="required"/>
         );
     }

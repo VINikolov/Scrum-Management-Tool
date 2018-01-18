@@ -1,0 +1,13 @@
+.side-menu {
+    position: fixed;
+    width: 15%;
+    left: 0;
+    background: #557a95;
+    top: 4.8%;
+}
+
+.side-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

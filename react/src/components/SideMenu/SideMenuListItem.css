@@ -1,0 +1,23 @@
+.side-menu-list-item {
+      display: block;
+      background: #557a95;
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: 0.2s linear;
+         -moz-transition: 0.2s linear;
+          -ms-transition: 0.2s linear;
+           -o-transition: 0.2s linear;
+              transition: 0.2s linear;
+}
+
+.side-menu-list-item a {
+    display: block;
+    background: #557a95;
+    padding: 30px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.side-menu-list-item a:hover {
+    background: #5d5c61;
+}
