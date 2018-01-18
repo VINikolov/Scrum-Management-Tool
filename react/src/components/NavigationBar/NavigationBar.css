@@ -1,10 +1,8 @@
-ul {
+.nav-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #7D1935;
-    position: fixed;
-    top: 0;
+    background-color: #557a95;
     width: 100%;
 }

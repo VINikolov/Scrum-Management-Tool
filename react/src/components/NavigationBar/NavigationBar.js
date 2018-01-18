@@ -7,7 +7,7 @@ class NavigationBar extends Component {
         super(props);
         const tabs = [
             this.props.linkNames.ScrumBoard,
-            this.props.linkNames.PokerPlanning,
+            this.props.linkNames.TaskManager,
             this.props.linkNames.Logout
         ];
         this.state = {
@@ -37,7 +37,7 @@ class NavigationBar extends Component {
 
     render() {
         return (
-            <ul>
+            <ul className="nav-bar">
                 {this.state.menuTabs.map(menuItem => this.createMenuTab(menuItem), this)}
             </ul>
         );

@@ -1,9 +1,9 @@
-li {
+.list-item {
     float: left;
     cursor: pointer;
 }
 
-li a {
+.list-item a {
     display: block;
     color: white;
     text-align: center;
@@ -11,10 +11,10 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color: #4A96AD;
+.list-item:hover:not(.active) {
+    background-color: #5d5c61;
 }
 
 .active {
-    background-color: #4A96AD;
+    background-color: #5d5c61;
 }

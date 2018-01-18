@@ -1,6 +1,6 @@
 var linkNames = {
     ScrumBoard: "Scrum board",
-    PokerPlanning: "Poker planning",
+    TaskManager: "Manage tasks",
     Logout: "Logout"
 }
 
@@ -10,8 +10,8 @@ var navBarUrls = [
         linkName: linkNames.ScrumBoard
     },
     {
-        link: "#",
-        linkName: linkNames.PokerPlanning
+        link: "/TaskManager",
+        linkName: linkNames.TaskManager
     },
     {
         link: "/",
