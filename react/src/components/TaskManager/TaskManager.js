@@ -6,12 +6,10 @@ import TaskCreationForm from './TaskCreationForm/TaskCreationForm';
 class TaskManager extends Component {
     render() {
         return (
-            <div>
-                <Switch>
-                    <Route exact path='/' component={TasksForm} />
-                    <Route path='/CreateATask' component={TaskCreationForm} />
-                </Switch>
-            </div>
+            <Switch>
+                <Route path='/TaskManager' component={TasksForm} />
+                <Route path='/TaskManager/CreateATask' component={TaskCreationForm} />
+            </Switch>
         );
     }
 }
