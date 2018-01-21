@@ -6,6 +6,7 @@
     border-radius: 5px;
     padding: 0px 10px;
     margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .task-name {
@@ -18,7 +19,5 @@
 }
 
 .task-description {
-    width: 70%;
     word-wrap: break-word;
-    padding-bottom: 10px;
 }
