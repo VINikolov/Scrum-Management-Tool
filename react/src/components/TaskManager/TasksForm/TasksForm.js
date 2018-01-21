@@ -6,8 +6,33 @@ import axios from 'axios';
 import tasksManagementUrls from '../../../ApiUrls';
 
 class TasksForm extends Component {
-    componentDidMount() {
-        axios.get(apiBaseUrl + tasksManagementUrls.GetAllTasks);
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            tasks: []
+        };
+
+        this.createTasks = this.createTasks.bind(this);
+    }
+
+    componentWillMount() {
+        axios.get(apiBaseUrl + tasksManagementUrls.tasksManagementUrls.GetAllTasks)
+            .then((response) => {
+                this.setState({
+                    tasks: response.data
+                })
+            });
+    }
+
+    createTasks(tasks) {
+        return tasks.map((task) => <Task name={task.Name} 
+                                        description={task.Description}
+                                        estimation={task.Estimation}
+                                        status={task.Status}
+                                        assignedTo={task.AssignedTo}
+                                        priority={task.Priority}
+                                        creationDate={task.CreationDate} />);
     }
 
     render() {
@@ -16,8 +41,7 @@ class TasksForm extends Component {
                 <h1 className="tasks-heading">
                     All existing tasks
                 </h1>
-
-                <Task />
+                {this.createTasks(this.state.tasks)}
             </div>
         );
     }

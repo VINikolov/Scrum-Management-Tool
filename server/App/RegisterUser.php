@@ -17,7 +17,7 @@
 
     $user = new User($_POST['username'], $_POST['password'], $_POST['passwordConfirmation'], $_POST['email']);
     $userRepository = new UserRepository();
-    $userRepository->Insert($user);
+    $userRepository->insert($user);
 
     $urls = parse_ini_file('../clientUrls.ini');
 

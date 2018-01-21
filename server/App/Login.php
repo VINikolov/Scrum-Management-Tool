@@ -4,7 +4,7 @@
     class UserManager {
         public function validateUser($username, $password) {
             $userRepository = new UserRepository();
-            $user = $userRepository->Select($username);
+            $user = $userRepository->select($username);
             if ($user['password'] == $password) {
                 return TRUE;
             }
@@ -19,6 +19,7 @@
     $userManager = new UserManager();
     if ($userManager->validateUser($username, $password)) {
         header('Location: '.$urls['scrumBoard']);
+        die();
     }
     else {
         //Error

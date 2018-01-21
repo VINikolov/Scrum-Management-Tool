@@ -4,7 +4,7 @@ var userManagementUrls = {
 }
 
 var tasksManagementUrls = {
-    GetAllTasks: "/Tasks/GetAllTasks"
+    GetAllTasks: "/TaskManager/GetAllTasks.php"
 }
 
 export default { userManagementUrls, tasksManagementUrls };

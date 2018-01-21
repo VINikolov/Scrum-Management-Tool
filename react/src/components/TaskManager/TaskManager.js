@@ -7,7 +7,7 @@ class TaskManager extends Component {
     render() {
         return (
             <Switch>
-                <Route path='/TaskManager' component={TasksForm} />
+                <Route exact path='/TaskManager/' component={TasksForm} />
                 <Route path='/TaskManager/CreateATask' component={TaskCreationForm} />
             </Switch>
         );

@@ -1,6 +1,6 @@
 <?php
     class UserRepository {
-        public function Insert($user) {
+        public function insert($user) {
             $dbConf = parse_ini_file('../configuration.ini');
 
             $connString = sprintf('mysql:host=%s;dbname=%s', $dbConf['host'], $dbConf['name']);
@@ -14,7 +14,7 @@
             $conn = null;
         }
 
-        public function Select($username) {
+        public function select($username) {
             $dbConf = parse_ini_file('../configuration.ini');
 
             $connString = sprintf('mysql:host=%s;dbname=%s', $dbConf['host'], $dbConf['name']);
