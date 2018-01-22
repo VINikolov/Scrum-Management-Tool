@@ -11,7 +11,10 @@ class ScrumBoard extends Component {
             <Switch>
                 <Route exact path='/ScrumBoard/' render={() => 
                     <TasksForm url={apiBaseUrl + urls.tasksManagementUrls.Backlog} heading="Backlog" />} />
-                {/* <Route path='/TaskManager/CreateATask' component={} /> */}
+                <Route path='/ScrumBoard/ActiveSprint' render={() =>
+                    <TasksForm url={apiBaseUrl + urls.tasksManagementUrls.ActiveSprint} heading="Active sprint tasks"/>} />
+                <Route path='/ScrumBoard/CompletedTasks' render={() => 
+                    <TasksForm url={apiBaseUrl + urls.tasksManagementUrls.CompleteTasks} heading="Completed tasks" /> }/>
             </Switch>
         );
     }

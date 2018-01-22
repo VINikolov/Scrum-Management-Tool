@@ -12,9 +12,10 @@ class TasksForm extends Component {
         };
 
         this.createTasks = this.createTasks.bind(this);
+        this.getTasks = this.getTasks.bind(this);
     }
 
-    componentWillMount() {
+    getTasks() {
         axios.get(this.props.url)
             .then((response) => {
                 this.setState({
@@ -34,6 +35,7 @@ class TasksForm extends Component {
     }
 
     render() {
+        this.getTasks();
         return (
             <div className="tasks-container">
                 <h1 className="tasks-heading">

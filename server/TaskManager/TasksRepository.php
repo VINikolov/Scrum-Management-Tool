@@ -61,5 +61,25 @@
 
             return $tasks;
         }
+
+        public function selectByStatus($status) {
+            $dbConf = parse_ini_file('../configuration.ini');
+
+            $connString = sprintf('mysql:host=%s;dbname=%s', $dbConf['host'], $dbConf['name']);
+            $conn = new Pdo($connString, $dbConf['user'], $dbConf['pass']);
+            $sql = $conn->prepare('SELECT * FROM Task WHERE Status=:status');
+            $sql->bindParam(':status', $status);
+            
+            $sql->execute();
+
+            $tasks = array();
+            while (is_object($row=$sql->fetch(PDO::FETCH_OBJ))) {
+                array_push($tasks, $row);
+            }
+
+            $conn = null;
+
+            return $tasks;
+        }
     }
 ?>
