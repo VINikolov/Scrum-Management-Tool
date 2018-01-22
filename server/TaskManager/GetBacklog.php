@@ -2,9 +2,7 @@
     require_once('TasksRepository.php');
 
     $tasksRepository = new TasksRepository();
-    $tasks = $tasksRepository->selectByPlacement("Backlog");
-
-    $urls = parse_ini_file('../clientUrls.ini');
+    $tasks = $tasksRepository->selectByPlacement('Backlog');
 
     $jsonData = json_encode($tasks);
     header('Content-Type: application/json');
