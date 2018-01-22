@@ -41,5 +41,25 @@
 
             $conn = null;
         }
+
+        public function selectByPlacement($placement) {
+            $dbConf = parse_ini_file('../configuration.ini');
+
+            $connString = sprintf('mysql:host=%s;dbname=%s', $dbConf['host'], $dbConf['name']);
+            $conn = new Pdo($connString, $dbConf['user'], $dbConf['pass']);
+            $sql = $conn->prepare('SELECT * FROM Task WHERE TaskPlacement=:taskPlacement');
+            $sql->bindParam(':taskPlacement', $placement);
+            
+            $sql->execute();
+
+            $tasks = array();
+            while (is_object($row=$sql->fetch(PDO::FETCH_OBJ))) {
+                array_push($tasks, $row);
+            }
+
+            $conn = null;
+
+            return $tasks;
+        }
     }
 ?>

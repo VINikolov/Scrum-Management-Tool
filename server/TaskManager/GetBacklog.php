@@ -2,7 +2,7 @@
     require_once('TasksRepository.php');
 
     $tasksRepository = new TasksRepository();
-    $tasks = $tasksRepository->selectAll();
+    $tasks = $tasksRepository->selectByPlacement("Backlog");
 
     $urls = parse_ini_file('../clientUrls.ini');
 
