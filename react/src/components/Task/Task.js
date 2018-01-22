@@ -12,11 +12,14 @@ class Task extends Component {
                 <div className="task-priority">
                     Priority: {this.props.priority}
                 </div>
-                <p className="task-description">
+                <div className="task-description">
                     <h4>Description:</h4> {this.props.description}
-                </p>
-                <div>
+                </div>
+                <div className="task-assignee">
                     <h4>Assigned to:</h4> {this.props.assignedTo}
+                </div>
+                <div className="task-status">
+                    <h4>Workflow status:</h4> {this.props.status}
                 </div>
             </div>
         );

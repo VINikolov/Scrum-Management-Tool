@@ -1,9 +1,8 @@
 .side-menu {
-    position: fixed;
     width: 15%;
-    left: 0;
     background: #C63D0F;
     top: 4.8%;
+    float: left;
 }
 
 .side-menu-list {

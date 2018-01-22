@@ -4,7 +4,7 @@ import './FormButton.css';
 class FormButton extends Component {
     render() {
         return (
-            <input className="form-button" type="Submit" value={this.props.buttonText} />
+            <input className="form-button" type="Submit" defaultValue={this.props.buttonText} />
         );
     }
 }

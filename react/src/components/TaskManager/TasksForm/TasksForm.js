@@ -3,7 +3,7 @@ import './TasksForm.css';
 import Task from '../../Task/Task';
 import apiBaseUrl from '../../../ApplicationSettings';
 import axios from 'axios';
-import tasksManagementUrls from '../../../ApiUrls';
+import urls from '../../../ApiUrls';
 
 class TasksForm extends Component {
     constructor(props) {
@@ -17,7 +17,7 @@ class TasksForm extends Component {
     }
 
     componentWillMount() {
-        axios.get(apiBaseUrl + tasksManagementUrls.tasksManagementUrls.GetAllTasks)
+        axios.get(apiBaseUrl + urls.tasksManagementUrls.GetAllTasks)
             .then((response) => {
                 this.setState({
                     tasks: response.data
@@ -26,7 +26,7 @@ class TasksForm extends Component {
     }
 
     createTasks(tasks) {
-        return tasks.map((task) => <Task name={task.Name} 
+        return tasks.map((task) => <Task key={task.Name} name={task.Name} 
                                         description={task.Description}
                                         estimation={task.Estimation}
                                         status={task.Status}

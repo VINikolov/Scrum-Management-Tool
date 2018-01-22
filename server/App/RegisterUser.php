@@ -22,4 +22,5 @@
     $urls = parse_ini_file('../clientUrls.ini');
 
     header('Location: '.$urls['scrumBoard']);
+    die();
 ?>

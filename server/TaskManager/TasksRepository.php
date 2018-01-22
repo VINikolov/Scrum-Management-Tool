@@ -25,7 +25,8 @@
             $connString = sprintf('mysql:host=%s;dbname=%s', $dbConf['host'], $dbConf['name']);
             $conn = new Pdo($connString, $dbConf['user'], $dbConf['pass']);
             $sql = $conn->prepare('INSERT INTO Task VALUES 
-                (:name, :description, :estimation, :status, :assignedTo, :priority, :creationDate)');
+                (:name, :description, :estimation, :status,
+                :assignedTo, :priority, :creationDate, :taskPlacement)');
             $sql->bindParam(':name', $task->name);
             $sql->bindParam(':description', $task->description);
             $sql->bindParam(':estimation', $task->estimation);
@@ -34,6 +35,7 @@
             $sql->bindParam(':priority', $task->priority);
             $date = date("Y-m-d");
             $sql->bindParam(':creationDate', $date);
+            $sql->bindParam(':taskPlacement', $task->taskPlacement);
 
             $sql->execute();
 

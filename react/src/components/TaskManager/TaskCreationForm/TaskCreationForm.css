@@ -1,0 +1,49 @@
+.creation-form {
+    margin-left: 18%;
+    margin-right: 6%;
+    margin-top: 2%;
+    padding: 10px;
+    display: block;
+    background: #5d5c61;
+    color: white;
+}
+
+.creation-form-heading {
+    text-align: left;
+    margin: 20px;
+}
+
+.creation-form input {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.creation-form select {
+    width: 15%;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;    
+}
+
+.creation-form label {
+    margin-left: 4%;
+    font-size: 20px;
+}
+
+.creation-form input[type="number"] {
+    width: 5%;
+    margin: 10px;
+    margin-left: 4%;
+}
+
+.creation-form input[type="submit"] {
+    width: 10%;
+    cursor: pointer;
+}

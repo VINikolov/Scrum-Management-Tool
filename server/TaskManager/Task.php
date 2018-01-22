@@ -6,9 +6,10 @@
         public $estimation;
         public $description;
         public $status;
+        public $taskPlacement;
 
         public function __construct($priority,
-            $assignedTo, $name, $estimation, $description, $status)
+            $assignedTo, $name, $estimation, $description, $status, $taskPlacement)
         {
             $this->priority = $priority;
             $this->assignedTo = $assignedTo;
@@ -16,6 +17,7 @@
             $this->estimation = $estimation;
             $this->description = $description;
             $this->status = $status;
+            $this->taskPlacement = $taskPlacement;
         }
     }
 ?>
