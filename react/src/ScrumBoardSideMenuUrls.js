@@ -2,12 +2,13 @@ var ScrumBoardLinkNames = {
     Backlog: "Backlog",
     ActiveSprint: "Active sprint",
     CompletedTasks: "Completed tasks",
-    ActiveBugs: "Active bugs"
+    CreateATask: "Create a new task",
+    Logout: "Logout"
 }
 
 var ScrumBoardMenuUrls = [
     {
-        link: "/ScrumBoard",
+        link: "/ScrumBoard/Backlog",
         linkName: ScrumBoardLinkNames.Backlog
     },
     {
@@ -19,8 +20,12 @@ var ScrumBoardMenuUrls = [
         linkName: ScrumBoardLinkNames.CompletedTasks
     },
     {
-        link: "/ScrumBoard/ActiveBugs",
-        linkName: ScrumBoardLinkNames.ActiveBugs
+        link: "/ScrumBoard/CreateATask",
+        linkName: ScrumBoardLinkNames.CreateATask
+    },
+    {
+        link: "/",
+        linkName: ScrumBoardLinkNames.Logout
     }
 ];
 

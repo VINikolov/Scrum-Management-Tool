@@ -22,6 +22,6 @@
         die();
     }
     else {
-        //Error
+        header('Location: '.$urls['app']);
     }
 ?>

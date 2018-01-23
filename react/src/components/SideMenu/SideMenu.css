@@ -1,8 +1,12 @@
 .side-menu {
     width: 15%;
     background: #C63D0F;
-    top: 4.8%;
+    /* top: 4.8%; */
+    top: 0;
     float: left;
+    /**/
+    height: 100%;
+    position: fixed;
 }
 
 .side-menu-list {
