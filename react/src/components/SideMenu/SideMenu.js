@@ -11,20 +11,14 @@ class SideMenu extends Component {
         }
 
         this.state = {
-            activeTab: tabs[this.props.active],
             menuTabs: tabs
         };
-        this.isActive = this.isActive.bind(this);
         this.createMenuTab = this.createMenuTab.bind(this);
-    }
-
-    isActive(menuTab) {
-        return this.state.activeTab === menuTab;
     }
 
     createMenuTab(menuItem) {
         var url = this.findUrl(this.props.menuUrls, menuItem);
-        return <SideMenuListItem key={menuItem} isActive={this.isActive(menuItem)} url={url.link} text={menuItem} />;
+        return <SideMenuListItem key={menuItem} url={url.link} text={menuItem} />;
     }
 
     findUrl(array, element) {

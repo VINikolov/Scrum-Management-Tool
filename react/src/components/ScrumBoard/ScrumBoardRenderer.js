@@ -7,7 +7,7 @@ class ScrumBoardRenderer extends Component {
     render() {
         return (
             <div>
-                <SideMenu active={0} menuUrls={ScrumBoardMenuUrls} linkNames={ScrumBoardLinkNames} />
+                <SideMenu menuUrls={ScrumBoardMenuUrls} linkNames={ScrumBoardLinkNames} />
                 <ScrumBoard />
             </div>
         );
