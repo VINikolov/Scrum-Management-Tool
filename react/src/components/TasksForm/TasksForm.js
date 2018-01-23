@@ -31,7 +31,8 @@ class TasksForm extends Component {
                                         status={task.Status}
                                         assignedTo={task.AssignedTo}
                                         priority={task.Priority}
-                                        creationDate={task.CreationDate} />);
+                                        creationDate={task.CreationDate}
+                                        placement={task.TaskPlacement} />);
     }
 
     render() {

@@ -8,7 +8,8 @@ var tasksManagementUrls = {
     Create: "/TaskManager/CreateATask.php",
     Backlog: "/TaskManager/GetBacklog.php",
     ActiveSprint: "/TaskManager/GetActiveSprint.php",
-    CompleteTasks: "/TaskManager/GetCompleteTasks.php"
+    CompleteTasks: "/TaskManager/GetCompleteTasks.php",
+    Update: "/TaskManager/UpdateTask.php",
 }
 
 export default { userManagementUrls, tasksManagementUrls };

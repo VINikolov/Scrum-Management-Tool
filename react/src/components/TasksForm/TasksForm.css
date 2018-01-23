@@ -4,7 +4,7 @@
     margin-top: 2%;
     margin-bottom: 2%;
     padding: 10px;
-    display: block;
+    display: flow-root;
     background: #5d5c61;
     color: white;
 }
