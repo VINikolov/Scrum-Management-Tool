@@ -29,7 +29,7 @@ class Task extends Component {
                     </h3>
                     <h4>Created on:</h4> {this.props.creationDate}
                     <div>
-                        Priority: {this.props.priority}
+                        <h4>Priority:</h4> {this.props.priority}
                     </div>
                     <div>
                         <h4>Status:</h4> {this.props.status}

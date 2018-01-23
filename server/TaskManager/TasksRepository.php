@@ -28,8 +28,11 @@
 
             $connString = sprintf('mysql:host=%s;dbname=%s', $dbConf['host'], $dbConf['name']);
             $conn = new Pdo($connString, $dbConf['user'], $dbConf['pass']);
-            $sql = $conn->prepare('SELECT * FROM Task WHERE TaskPlacement=:taskPlacement');
+            $sql = $conn->prepare('SELECT * FROM Task WHERE TaskPlacement=:taskPlacement AND
+                Status not like :done');
             $sql->bindParam(':taskPlacement', $placement);
+            $done = "Done";
+            $sql->bindParam(':done', $done);
             
             $sql->execute();
 
